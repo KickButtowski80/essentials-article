@@ -12,6 +12,7 @@
 
         <!-- Author -->
         <p class="lead">
+          <%= image_tag @article.user.image.url(:thumb), class: "img-circle" %> 
           <%= @article.user.username %>
         </p>
 
