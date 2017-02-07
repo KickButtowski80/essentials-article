@@ -7455,3 +7455,2495 @@ ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halfli
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-02-06 23:33:30 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 53ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles" for 10.240.0.241 at 2017-02-06 23:33:30 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_foot.html.erb (0.9ms)
+Completed 200 OK in 679ms (Views: 668.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.0.204 at 2017-02-06 23:33:31 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.0.204 at 2017-02-06 23:33:32 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.1.17 at 2017-02-06 23:33:32 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/articles/new" for 10.240.1.20 at 2017-02-06 23:33:33 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/_form.html.erb (133.0ms)
+  Rendered articles/new.html.erb within layouts/application (134.7ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_foot.html.erb (0.6ms)
+Completed 200 OK in 216ms (Views: 203.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 10.240.0.204 at 2017-02-06 23:33:36 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (36.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 162ms (Views: 159.7ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users" for 10.240.1.64 at 2017-02-06 23:33:52 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVCvtZyfPQ5n7WHV/7Y7jYI2YgRBv6tkV4Rw9WUmORltI3N9lGbmK5kp4VmEpxiOOTtZxm2er7bx7+NbO2/7Rw==", "user"=>{"username"=>"hello", "email"=>"test@test.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f911a61bc20 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3404-t2xz0w.png>, @original_filename="New Bitmap Image.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"New Bitmap Image.png\"\r\nContent-Type: image/png\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 572ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:300:in `exists?'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:560:in `block in queue_all_for_delete'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:559:in `map'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:559:in `queue_all_for_delete'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:253:in `clear'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:105:in `assign'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:66:in `block in define_setter'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:54:in `public_send'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+  actionpack (4.2.5) lib/action_controller/metal/strong_parameters.rb:185:in `each_pair'
+  actionpack (4.2.5) lib/action_controller/metal/strong_parameters.rb:185:in `each_pair'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:74:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 10.240.0.207 at 2017-02-06 23:37:32 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 91ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles" for 10.240.0.110 at 2017-02-06 23:37:33 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_foot.html.erb (0.6ms)
+Completed 200 OK in 553ms (Views: 542.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.0.182 at 2017-02-06 23:37:34 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.0.186 at 2017-02-06 23:37:34 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.2ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.0.110 at 2017-02-06 23:37:35 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.5ms)
+
+
+Started GET "/articles/1" for 10.240.0.179 at 2017-02-06 23:37:38 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (46.2ms)
+  Rendered articles/show.html.erb within layouts/application (64.0ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_foot.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 131.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 10.240.0.187 at 2017-02-06 23:38:10 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_foot.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 10.240.0.187 at 2017-02-06 23:38:11 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/_form.html.erb (13.6ms)
+  Rendered articles/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 108.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 10.240.1.64 at 2017-02-06 23:38:26 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W4sCaldNhNB50DsL+OsyantzsTdrlkJO3/iVzls2Kbdz+N6iX7Rf9YcUu4eD+hFpwH6K9Ue3Rpx5kwZgBX/r6Q==", "article"=>{"title"=>"testing ", "body"=>"testing to see if the pics work"}, "commit"=>"create clear article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = 'testing ' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "testing "], ["body", "testing to see if the pics work"], ["user_id", 1], ["created_at", "2017-02-06 23:38:26.668297"], ["updated_at", "2017-02-06 23:38:26.668297"]]
+  [1m[36m (23.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles/2
+Completed 302 Found in 42ms (ActiveRecord: 24.0ms)
+
+
+Started GET "/articles/2" for 10.240.1.64 at 2017-02-06 23:38:26 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.2ms)
+  Rendered articles/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.1.64 at 2017-02-06 23:38:27 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.1.60 at 2017-02-06 23:38:27 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.0.187 at 2017-02-06 23:38:27 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
+
+
+Started GET "/" for 10.240.1.64 at 2017-02-06 23:38:32 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 10.240.1.64 at 2017-02-06 23:38:32 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/edit" for 10.240.0.187 at 2017-02-06 23:39:26 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users" for 10.240.0.110 at 2017-02-06 23:40:39 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rd2xF25I31dWM8u5FrKdSyhZZeXpiGSH6lx4EHapubdtrm3fZrEEcqj3SzVto75Ik1ReJ8WpYFVMN+u+KOB76Q==", "user"=>{"username"=>"hello", "email"=>"test@test.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f10b0d1eb70 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3431-1xqueqe.jpg>, @original_filename="20161019_213849.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213849.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 521ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:300:in `exists?'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:560:in `block in queue_all_for_delete'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:559:in `map'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:559:in `queue_all_for_delete'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:253:in `clear'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:105:in `assign'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:66:in `block in define_setter'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:54:in `public_send'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+  actionpack (4.2.5) lib/action_controller/metal/strong_parameters.rb:185:in `each_pair'
+  actionpack (4.2.5) lib/action_controller/metal/strong_parameters.rb:185:in `each_pair'
+  activerecord (4.2.5) lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:74:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.1.64 at 2017-02-06 23:40:55 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JLSo+t9yFk6KbzbLhLuJZgiVpjY8spTVmivBgVV6LjkMx3Qy14vNa3Srtkf/qqpls5id9BCTkAc8QFIvCzPsZw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/
+Completed 302 Found in 22ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.1.64 at 2017-02-06 23:40:55 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_foot.html.erb (0.3ms)
+Completed 200 OK in 153ms (Views: 140.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_up" for 10.240.0.204 at 2017-02-06 23:48:08 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.240.1.19 at 2017-02-06 23:48:28 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wVrm7MtvTmYr8+5jum97ULgRSg3pRSHSeUjYNXki7kzXVBoN7dzMpQxZJTQXGD4sZMuHkvUjR+sazdRK5CZq0Q==", "user"=>{"username"=>"test2", "firstname"=>"", "lastname"=>"", "email"=>"test@yes.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@yes.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'test2' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "username", "firstname", "lastname", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test@yes.com"], ["encrypted_password", "$2a$10$7wJM6vRZMpbbLz.UsnaEPeorJ2y7.l.M7g3DM1lBx91bEvP4.BqCG"], ["username", "test2"], ["firstname", ""], ["lastname", ""], ["created_at", "2017-02-06 23:48:28.218459"], ["updated_at", "2017-02-06 23:48:28.218459"]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-02-06 23:48:28.233685"], ["current_sign_in_at", "2017-02-06 23:48:28.233685"], ["last_sign_in_ip", "10.240.1.19"], ["current_sign_in_ip", "10.240.1.19"], ["sign_in_count", 1], ["updated_at", "2017-02-06 23:48:28.234905"], ["id", 2]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/
+Completed 302 Found in 119ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/" for 10.240.0.187 at 2017-02-06 23:48:28 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 10.240.1.64 at 2017-02-06 23:48:28 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_foot.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.0.179 at 2017-02-06 23:48:28 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.9ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.1.19 at 2017-02-06 23:48:29 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.1.15 at 2017-02-06 23:48:29 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.0ms)
+
+
+Started GET "/users/edit" for 10.240.0.187 at 2017-02-06 23:48:34 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/thumb/missing.png" for 10.240.0.187 at 2017-02-06 23:48:34 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.3ms)
+
+
+Started PUT "/users" for 10.240.1.32 at 2017-02-06 23:48:53 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqq4NiODC30/Re+agK2PGaoJ5gdHSRq+UQCmzrGaWuKwpETXBTCJvhjvJM0t2spldtMrmFsvfIcyhaqxLJ7efw==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f10b4066e60 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3431-19hrzyt.jpg>, @original_filename="20161019_213612.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213612.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-3mi2ss.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]' -auto-orient -resize "300x300>" '/tmp/0f0d190bc4ce7407e4c871f4b11e0edc20170206-3431-1fd9qjg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-1e88w6y.jpg[0]' -auto-orient -resize "100x100>" '/tmp/0f0d190bc4ce7407e4c871f4b11e0edc20170206-3431-onomvi'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3431-nyg6r6.jpg'
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "20161019_213612.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11136822], ["image_updated_at", "2017-02-06 23:48:53.397941"], ["updated_at", "2017-02-06 23:48:56.445952"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/20161019_213612.jpg
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 3158ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.5ms)
+
+
+Started PUT "/users" for 10.240.0.110 at 2017-02-06 23:56:16 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqq4NiODC30/Re+agK2PGaoJ5gdHSRq+UQCmzrGaWuKwpETXBTCJvhjvJM0t2spldtMrmFsvfIcyhaqxLJ7efw==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000374d418 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3583-1sr97hg.jpg>, @original_filename="20161019_213612.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213612.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-179eot5.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]' -auto-orient -resize "300x300>" '/tmp/8efa38560cbed28913d41040a74b137c20170206-3583-6sxb1w'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1triljq.jpg[0]' -auto-orient -resize "100x100>" '/tmp/8efa38560cbed28913d41040a74b137c20170206-3583-ixcnd7'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-163rj7h.jpg'
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "20161019_213612.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11136822], ["image_updated_at", "2017-02-06 23:56:16.810851"], ["updated_at", "2017-02-06 23:56:19.266065"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/20161019_213612.jpg
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2853ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+
+
+Started PUT "/users" for 10.240.1.15 at 2017-02-06 23:56:31 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqq4NiODC30/Re+agK2PGaoJ5gdHSRq+UQCmzrGaWuKwpETXBTCJvhjvJM0t2spldtMrmFsvfIcyhaqxLJ7efw==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000192a4e0 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3583-1mxv7wl.jpg>, @original_filename="20161019_213612.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213612.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-vmmbcj.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]' -auto-orient -resize "300x300>" '/tmp/b4840bb14e9caad9c310f980abb88a5420170206-3583-d5pfai'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-1ob8em5.jpg[0]' -auto-orient -resize "100x100>" '/tmp/b4840bb14e9caad9c310f980abb88a5420170206-3583-16eqbja'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3583-7w5kfr.jpg'
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "20161019_213612.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11136822], ["image_updated_at", "2017-02-06 23:56:31.888472"], ["updated_at", "2017-02-06 23:56:34.238941"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/20161019_213612.jpg
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2450ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/" for 10.240.0.110 at 2017-02-06 23:58:41 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 73ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles" for 10.240.0.187 at 2017-02-06 23:58:41 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (32.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_foot.html.erb (0.5ms)
+Completed 200 OK in 391ms (Views: 382.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.0.110 at 2017-02-06 23:58:42 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.0.110 at 2017-02-06 23:58:43 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.0.69 at 2017-02-06 23:58:43 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/users/edit" for 10.240.0.110 at 2017-02-06 23:58:47 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (76.2ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_foot.html.erb (1.4ms)
+Completed 200 OK in 192ms (Views: 189.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/thumb/missing.png" for 10.240.1.60 at 2017-02-06 23:58:47 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.3ms)
+
+
+Started PUT "/users" for 10.240.1.64 at 2017-02-06 23:59:05 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JNRDoh9IJkgh3ovOPB58CuZLhstZkjMeJ75QCCGpGaAy2r9DOfukiwZ0QJmRaTl2OpFLVEX0VSdEO1x3vK2dPQ==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000003d33170 @tempfile=#<Tempfile:/tmp/RackMultipart20170206-3663-1vicd6j.jpg>, @original_filename="20161019_213612.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213612.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-1urrlyq.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]' -auto-orient -resize "300x300>" '/tmp/a31198cb1566ea550da6acd321d2420020170206-3663-1iuaij4'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-eefwp7.jpg[0]' -auto-orient -resize "100x100>" '/tmp/a31198cb1566ea550da6acd321d2420020170206-3663-66wk8s'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170206-3663-hazpf2.jpg'
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "20161019_213612.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11136822], ["image_updated_at", "2017-02-06 23:59:06.052963"], ["updated_at", "2017-02-06 23:59:08.629379"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/20161019_213612.jpg
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 3069ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.9ms)
+
+
+Started PUT "/users" for 10.240.1.17 at 2017-02-07 00:00:42 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JNRDoh9IJkgh3ovOPB58CuZLhstZkjMeJ75QCCGpGaAy2r9DOfukiwZ0QJmRaTl2OpFLVEX0VSdEO1x3vK2dPQ==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd428241158 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-3663-1u6q3t.jpg>, @original_filename="20161019_213612.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"20161019_213612.jpg\"\r\nContent-Type: image/jpeg\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1uavj2p.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]' -auto-orient -resize "300x300>" '/tmp/bc728aa48663a75807f56a97f6cc781e20170207-3663-1gazj6l'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]'
+Command :: convert '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1lnnvtm.jpg[0]' -auto-orient -resize "100x100>" '/tmp/bc728aa48663a75807f56a97f6cc781e20170207-3663-n43fl4'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/998141d0b1e5ed824e6b29cbf0f58d2920170207-3663-1tmjto7.jpg'
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "20161019_213612.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11136822], ["image_updated_at", "2017-02-07 00:00:42.871980"], ["updated_at", "2017-02-07 00:00:45.390753"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/20161019_213612.jpg
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2617ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.5ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-02-07 00:47:12 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://essentials-articles-kickbuttowski59.c9users.io:8080/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+Completed 302 Found in 140ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles" for 10.240.1.20 at 2017-02-07 00:47:12 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (32.7ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_foot.html.erb (0.5ms)
+Completed 200 OK in 627ms (Views: 617.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 10.240.1.15 at 2017-02-07 00:47:13 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.1ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 10.240.1.20 at 2017-02-07 00:47:14 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 10.240.1.64 at 2017-02-07 00:47:14 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.2ms)
+
+
+Started GET "/users/edit" for 10.240.1.15 at 2017-02-07 00:47:20 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (82.7ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_foot.html.erb (0.7ms)
+Completed 200 OK in 164ms (Views: 161.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/thumb/missing.png" for 10.240.1.15 at 2017-02-07 00:47:21 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+
+
+Started PUT "/users" for 10.240.0.187 at 2017-02-07 00:47:43 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RHFZ2eYO1acBJMrmbb6MAqMzDTA4idjzUYyxk7N6xEVSf6U4wL1XZCaOAbHAycl+f+nAryTvvsoyCb3sLn5A2A==", "user"=>{"username"=>"test2", "email"=>"test@yes.com", "firstname"=>"", "lastname"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f5655c9e9a8 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-4002-181t6lw.png>, @original_filename="7f3a269979e0ef1eaf45804abe636909.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"7f3a269979e0ef1eaf45804abe636909.png\"\r\nContent-Type: image/png\r\n">, "current_password"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-19g62y5.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]'
+Command :: convert '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]' -auto-orient -resize "300x300>" '/tmp/a74a27934f932ba14625f70c700a1c1620170207-4002-8pm0d8'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]'
+Command :: convert '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-jfgzjl.png[0]' -auto-orient -resize "100x100>" '/tmp/a74a27934f932ba14625f70c700a1c1620170207-4002-8brfai'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'test2' AND "users"."id" != 2) LIMIT 1[0m
+Command :: file -b --mime '/tmp/a984db6b1e060a5b366f0d6b8a1ae70020170207-4002-qqa9y3.png'
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["image_file_name", "7f3a269979e0ef1eaf45804abe636909.png"], ["image_content_type", "image/png"], ["image_file_size", 180036], ["image_updated_at", "2017-02-07 00:47:43.924970"], ["updated_at", "2017-02-07 00:47:44.610074"], ["id", 2]]
+[paperclip] saving /users/images/000/000/002/original/7f3a269979e0ef1eaf45804abe636909.png
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1090ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `match' for nil:NilClass
+Did you mean?  catch):
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:67:in `block in partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `each'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `find'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:66:in `partition_matching_region'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:55:in `get_partition'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:26:in `endpoint_for'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:10:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/endpoint_provider.rb:80:in `resolve'
+  aws-sdk-core (2.3.22) lib/aws-sdk-core/plugins/regional_endpoint.rb:24:in `block in <class:RegionalEndpoint>'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:70:in `call'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:205:in `block in resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:57:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:204:in `resolve_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:200:in `value_at'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `block in resolve'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each_key'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/set.rb:306:in `each'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:189:in `resolve'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:177:in `apply_defaults'
+  aws-sdk-core (2.3.22) lib/seahorse/client/configuration.rb:150:in `build!'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:68:in `build_config'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:19:in `initialize'
+  aws-sdk-core (2.3.22) lib/seahorse/client/base.rb:105:in `new'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:169:in `extract_client'
+  aws-sdk-resources (2.3.22) lib/aws-sdk-resources/resource.rb:15:in `initialize'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `new'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:247:in `obtain_s3_instance_for'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:241:in `s3_interface'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:251:in `s3_bucket'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:259:in `s3_object'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:361:in `block in flush_writes'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `each'
+  paperclip (5.0.0) lib/paperclip/storage/s3.rb:334:in `flush_writes'
+  paperclip (5.0.0) lib/paperclip/attachment.rb:241:in `save'
+  paperclip (5.0.0) lib/paperclip/has_attached_file.rb:92:in `block in add_active_record_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `instance_exec'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:446:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:228:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+  activerecord (4.2.5) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.2.5) lib/active_record/persistence.rb:120:in `save'
+  activerecord (4.2.5) lib/active_record/validations.rb:37:in `save'
+  activerecord (4.2.5) lib/active_record/attribute_methods/dirty.rb:21:in `save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block (2 levels) in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:211:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  activerecord (4.2.5) lib/active_record/persistence.rb:252:in `block in update'
+  activerecord (4.2.5) lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/persistence.rb:250:in `update'
+  devise (3.5.6) lib/devise/models/database_authenticatable.rb:72:in `update_with_password'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:94:in `update_resource'
+  devise (3.5.6) app/controllers/devise/registrations_controller.rb:48:in `update'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
